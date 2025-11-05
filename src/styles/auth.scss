@@ -1,0 +1,17 @@
+@import "./custom_colors";
+
+.auth {
+  background-color: $custom-purple;
+  min-height: calc(100vh - 70px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 1rem;
+  position: relative; 
+}
+
+.auth .card {
+  background-color: white;
+  z-index: 2;
+  position: relative;
+}
