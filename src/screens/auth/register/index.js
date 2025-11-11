@@ -18,8 +18,8 @@ const RegisterScreen = () => {
                 <Card.Content>
                   <Section>
                     <Columns centered>
-                      <Columns.Column size={8} className="has-text-centered">
-                        <Image src={LogoImage} size={50} alt="Logo" />
+                      <Columns.Column size={10} className="has-text-centered">
+                        <Image src={LogoImage} size={18} alt="Logo" />
                       </Columns.Column>
                     </Columns>
 
