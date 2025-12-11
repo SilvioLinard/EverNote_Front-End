@@ -5,6 +5,7 @@ import RegisterScreen from "./screens/auth/register";
 import LoginScreen from "./screens/auth/login";
 import NotesScreen from "./screens/notes/index";
 import UserEditScreen from "./screens/users/edit";
+import PrivateRoute from "./components/auth/private_route";
 
 const Search = () => (
   <BrowserRouter>
@@ -12,8 +13,12 @@ const Search = () => (
       <Route path="/" element={<Home />} />
       <Route path="/register" element={<RegisterScreen />} />
       <Route path="/login" element={<LoginScreen />} />
-      <Route path="/notes" element={<NotesScreen />} />
-      <Route path="/users/edit" element={<UserEditScreen />} />
+
+      {/* Agrupa rotas privadas */}
+      <Route element={<PrivateRoute />}>
+        <Route path="/notes" element={<NotesScreen />} />
+        <Route path="/users/edit" element={<UserEditScreen />} />
+      </Route>
     </Routes>
   </BrowserRouter>
 );

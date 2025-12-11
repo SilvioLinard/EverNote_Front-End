@@ -1,14 +1,65 @@
 @import "./custom_colors";
 
-   .navbar {
-    background-color: white;
-      height: 70px;
-      border-bottom: 1px solid black;
+.navbar-logged {
+  background-color: $custom-purple;
+  height: 70px;
+  border-bottom: 1px solid black;
 
-      .navbar-brand {  
-        img {
-          height: 40px;
-          margin-top:15px;
-        }
-      }
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 70px;
     }
+  }
+
+  .navbar-menu {
+    background-color: $custom-purple; 
+  }
+
+ .navbar-item {
+    color:white;
+    font-weight: 500;
+
+    &:hover {
+      background-color: darken($custom-purple, 10%);
+      color: white;
+    }
+ }
+
+  .button {
+    border-color: white;
+    color: gray;
+
+    &:hover {
+      background-color: gray;
+      color: $custom-purple;
+    }
+  }
+};
+
+.backgroundColor{
+  
+background-color: whitesmoke;
+  
+}
+
+.trans{
+    border-color: black;
+    color: rgb(114, 109, 109);
+
+    &:hover {
+      background-color: white;
+      color: $custom-purple;
+    }
+}
+
+.navbar-burger {
+  background-color: rgba(243, 243, 243, 0.836); // leve transparência
+  border-radius: 20px;
+}
+
+.navbar-burger:hover {
+  background-color: rgba(202, 197, 197, 0.616);
+}
