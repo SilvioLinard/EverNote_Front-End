@@ -1,37 +1,45 @@
 @import "./custom_colors";
+
+/* BASE */
+html,
+body,
+#root {
+  height: 100%;
+}
+
+/* CONTAINER RAIZ DO NOTES */
+#notes-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+/* ÁREA PRINCIPAL */
 .notes {
-  height: calc(100% - 70px);
-  margin-left: 0px;
-  margin-top: 0px;
-}
-/* Estilizando o menu do react-burger-menu */
-.bm-menu {
-  background: white; /* fundo do menu */
-  padding-top: 10px; /* espaçamento no topo */
-}
-
-/* Overlay (fundo escuro ao abrir o menu) */
-.bm-overlay {
-  background: rgba(0, 0, 0, 0.3);
-}
-
-/* Links e itens dentro do menu */
-.bm-menu ul {
-  list-style: none;
-  padding: 0;
   margin: 0;
+  padding-top: 70px; // altura do header
+  min-height: calc(100vh - 70px);
 }
 
-.bm-menu ul li {
-  padding: 10px 20px;
-  font-weight: 500;
+/* REACT-BURGER-MENU */
+.bm-menu-wrap {
+  top: 70px !important;
+  height: calc(100vh - 70px) !important;
 }
 
-.bm-menu ul li:hover {
-  background: #f5f5f5;
+.bm-menu {
+  background: white;
+  padding-top: 10px;
 }
 
-/* Input Search */
-.bm-menu input.input {
-  width: 100%;
+.bm-overlay {
+  top: 70px !important;
+  height: calc(100vh - 70px) !important;
+}
+
+/* BOTÃO DO MENU */
+.notes-burger-btn {
+  position: fixed;
+  top: 85px; // abaixo do header
+  left: 1rem;
+  z-index: 1200;
 }
