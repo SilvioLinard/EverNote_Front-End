@@ -1,4 +1,4 @@
- import React, { Fragment } from 'react';
+import React, { Fragment } from 'react';
 import PresentationImage from '../../assets/images/presentation.png';
 import Header from "../../components/header";
 import { Section, Container, Columns, Heading } from 'react-bulma-components';
@@ -14,18 +14,19 @@ const Home = () => (
         <Columns>
           <Columns.Column size={5}>
             <Heading size={2} className="has-text-white">
-              Create notes easily and access them anytime on the cloud
-            </Heading>
+              EverNote, your favorite note-taking app.
 
+            </Heading>
+            <br />
             <Heading subtitle size={5} className="has-text-light">
-              Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs.
+              Welcome to Evernote, create, edit and customize your notes, an app designed for you.
               <br /><br />
-              Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print.
+              Download the app or visit our website, register, and enjoy!
             </Heading>
 
-             <Link to="/register" className="button is-outlined is-white is-large">
-            <strong>Register for free Now</strong>
-             </Link> 
+            <Link to="/register" className="button is-outlined is-white is-large">
+              <strong>Register for free Now</strong>
+            </Link>
           </Columns.Column>
 
           <Columns.Column size={6} offset={1}>

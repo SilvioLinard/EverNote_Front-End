@@ -15,7 +15,7 @@ function Header() {
             <img src={LogoImage} alt="Logo" />
           </Link>
 
-          <Navbar.Burger 
+          <Navbar.Burger
             className={`navbar-burger ${isActive ? 'is-active' : ''}`}
             aria-label="menu"
             aria-expanded={isActive ? 'true' : 'false'}

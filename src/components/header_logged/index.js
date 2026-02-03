@@ -19,7 +19,7 @@ function HeaderLogged({ onOpenMenu }) {
     <Navbar color="custom-purple" className="navbar-logged" fixed="top">
       <Container>
         <Navbar.Brand className="is-flex is-align-items-center">
-          {/* LOGO */}
+
           <Link to="/notes" className="navbar-item">
             <img
               src={LogoImage}
@@ -28,7 +28,6 @@ function HeaderLogged({ onOpenMenu }) {
             />
           </Link>
 
-          {/* BOTÃO */}
           <Button
             color="white"
             outlined
@@ -43,7 +42,7 @@ function HeaderLogged({ onOpenMenu }) {
         </Navbar.Brand>
 <Navbar.Container align="end">
   <Navbar.Item>
-    <div className="is-flex is-align-items-center">
+    <div className="is-flex is-align-items-end">
       <Button
         renderAs={Link}
         to="/users/edit"
